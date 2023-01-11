@@ -1,0 +1,9 @@
+.team {
+  background-color: $special-bg-cl;
+
+  &__title {
+    margin-bottom: 50px;
+    @extend %title;
+    @extend %title-cl;
+  }
+}

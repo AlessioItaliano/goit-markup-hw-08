@@ -1,0 +1,29 @@
+.hero {
+  max-width: 1600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-image: linear-gradient(to top, $gradient-bg-cl, $gradient-bg-cl),
+    url(../images/main-page/hero-bg-img.jpg);
+  background-color: $hero-bg-cl;
+
+  text-align: center;
+
+  &__title {
+    max-width: 696px;
+    margin: 0 auto 30px;
+
+    color: $special-text-cl;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  &__btn {
+    padding: 10px 32px;
+  }
+}

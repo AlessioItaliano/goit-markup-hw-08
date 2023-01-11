@@ -1,0 +1,29 @@
+.footer-socials {
+  &__title {
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14em;
+    color: $special-text-cl;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__link {
+    fill: $primery-white-cl;
+    background-color: $footer-bg-icon;
+
+    transition: background-color 250ms $timing-funk;
+
+    &:hover,
+    &:focus {
+      background-color: $accent-bg-cl;
+    }
+  }
+}

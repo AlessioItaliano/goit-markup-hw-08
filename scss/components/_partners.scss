@@ -1,0 +1,36 @@
+.partners {
+  &__title {
+    @extend %title;
+    @extend %title-cl;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+  &__item {
+    width: 170px;
+    height: 92px;
+  }
+
+  &__link {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    fill: $border-icon-cl;
+    border: 1px solid $border-icon-cl;
+    border-radius: 4px;
+    cursor: pointer;
+
+    transition: fill 250ms $timing-funk, border-color 250ms $timing-funk;
+
+    &:hover,
+    &:focus {
+      fill: $accent-cl;
+      border: 1px solid $accent-cl;
+    }
+  }
+}

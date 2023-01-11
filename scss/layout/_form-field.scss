@@ -1,0 +1,95 @@
+.form-field {
+  margin-bottom: 20px;
+
+  &__item {
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__label {
+    display: block;
+    margin-bottom: 4px;
+
+    font-size: 12px;
+    line-height: 1.16em;
+    letter-spacing: 0.01em;
+  }
+
+  &__input {
+    height: 40px;
+    width: 100%;
+    padding: 0 12px 0 42px;
+
+    border: 1px solid $form-fild-border-cl;
+    border-radius: 4px;
+
+    outline: none;
+    cursor: pointer;
+
+    transition: border-color 250ms $timing-funk;
+
+    &:focus,
+    &:hover {
+      border-color: $accent-bg-cl;
+    }
+  }
+
+  &__textarea {
+    display: block;
+    resize: none;
+
+    width: 100%;
+    height: 120px;
+    padding: 12px 16px;
+
+    border: 1px solid $form-fild-border-cl;
+    border-radius: 4px;
+
+    outline: none;
+    cursor: pointer;
+
+    &::placeholder {
+      font-size: 12px;
+      line-height: 1.16em;
+      letter-spacing: 0.01em;
+
+      color: $placeholder-tetx-cl;
+    }
+
+    &:focus,
+    &:hover {
+      border-color: $accent-bg-cl;
+    }
+  }
+
+  &__content {
+    position: relative;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+
+    transition: fill 250ms $timing-funk;
+
+    .form-field__input:focus + &,
+    .form-field__input:hover + & {
+      fill: $accent-cl;
+    }
+  }
+
+  &__checkbox {
+    margin-bottom: 30px;
+  }
+
+  &__btn {
+    display: block;
+    padding: 10px 52px;
+    margin: 0 auto;
+  }
+}

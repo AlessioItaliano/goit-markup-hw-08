@@ -1,0 +1,17 @@
+.portfolio {
+  &__title {
+    @extend %title-cl;
+    @extend %title;
+
+    &--visually-hidden {
+      @include visually-hidden;
+    }
+  }
+
+  &__filter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    gap: 8px;
+  }
+}

@@ -1,0 +1,38 @@
+.checkbox {
+  display: flex;
+
+  &__input {
+    appearance: none;
+  }
+
+  &__icon {
+    position: absolute;
+    margin: 5px 7px 4px 13px;
+    border: 2px solid $secondary-text-cl;
+    border-radius: 2px;
+    fill: transparent;
+
+    transition: fill 250ms $timing-funk, background-color 250ms $timing-funk,
+      border-color 250ms $timing-funk;
+
+    .checkbox__input:checked + & {
+      fill: $primery-white-cl;
+      background-color: $accent-bg-cl;
+      border-color: $accent-cl;
+    }
+  }
+
+  &__description {
+    position: relative;
+    padding-left: 36px;
+    margin-right: auto;
+
+    font-size: 14px;
+    line-height: 1.71em;
+    letter-spacing: 0.03em;
+  }
+
+  &__policy {
+    color: $accent-text-cl;
+  }
+}

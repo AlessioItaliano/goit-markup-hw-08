@@ -1,0 +1,26 @@
+.address {
+  &__link {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    text-decoration: none;
+    color: $secondary-text-address-cl;
+    transition: color 250ms $timing-funk;
+
+    &--light-cl {
+      color: $special-text-cl;
+    }
+    &:hover,
+    &:focus {
+      color: $accent-cl;
+    }
+  }
+
+  &__item {
+    margin-bottom: 9px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

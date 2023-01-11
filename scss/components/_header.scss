@@ -1,0 +1,90 @@
+.header {
+  border-bottom: 1px solid $border-header-cl;
+
+  &__logo {
+    display: flex;
+  }
+
+  &__container,
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__nav {
+    gap: 93px;
+  }
+
+  &__menu,
+  &__contacts {
+    display: flex;
+    gap: 50px;
+  }
+
+  &__link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: $secondary-text-cl;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
+    transition: color 250ms $timing-funk;
+
+    &--current {
+      position: relative;
+      color: $accent-text-cl;
+
+      &::after {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 100%;
+        height: 4px;
+        bottom: -1px;
+
+        background: $accent-bg-cl;
+        border-radius: 2px;
+      }
+    }
+
+    &:hover,
+    &:focus {
+      color: $accent-text-cl;
+      fill: $accent-cl;
+    }
+  }
+
+  &__mail,
+  &__tel {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    fill: $primery-text-cl;
+    color: $primery-text-cl;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
+    transition: color 250ms $timing-funk, fill 250ms $timing-funk;
+
+    &:hover,
+    &:focus,
+    &:hover,
+    &:focus {
+      color: $accent-text-cl;
+      fill: $accent-cl;
+    }
+  }
+}

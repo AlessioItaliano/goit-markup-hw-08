@@ -1,0 +1,12 @@
+.logo {
+  color: $accent-text-cl;
+  font-family: $secondary-font;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+
+  &__secondary-cl {
+    color: $secondary-logo-cl;
+  }
+}

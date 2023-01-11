@@ -1,0 +1,59 @@
+.btn-big {
+  @extend %btn;
+  min-width: 200px;
+  min-height: 50px;
+
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  color: $primery-btn-text-cl;
+  background-color: $accent-bg-cl;
+
+  transition: border-color 250ms $timing-funk, box-shadow 250ms $timing-funk;
+
+  &:hover,
+  &:focus {
+    background-color: $btn-bg-active-cl;
+    box-shadow: 0px 4px 4px $btn-box-shadow-cl;
+  }
+}
+
+.btn-small {
+  @extend %btn;
+  min-width: 73px;
+  padding: 6px 22px;
+
+  color: $secondary-btn-text-cl;
+  background-color: $special-btn-bg-cl;
+  font-weight: 500;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+
+  transition: color 250ms $timing-funk, background-color 250ms $timing-funk,
+    box-shadow 250ms $timing-funk;
+
+  &:hover,
+  &:focus {
+    color: $primery-btn-text-cl;
+    background-color: $accent-bg-cl;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.close-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: $primery-btn-text-cl;
+  border: 1px solid $close-btn-border-cl;
+  cursor: pointer;
+
+  transition: fill 250ms $timing-funk;
+
+  &:hover,
+  &:focus {
+    fill: $accent-cl;
+  }
+}
