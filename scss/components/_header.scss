@@ -5,6 +5,10 @@
     display: flex;
   }
 
+  &__burger {
+    display: none;
+  }
+
   &__container,
   &__nav {
     display: flex;
