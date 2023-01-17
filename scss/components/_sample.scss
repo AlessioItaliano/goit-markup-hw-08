@@ -28,12 +28,26 @@
       flex-basis: calc((100% - 60px) / 3);
     }
   }
+  &__link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: $portfolio-bg-cl;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+      transform: translateY(0);
+      transition: transform 250ms $timing-funk;
+    }
+  }
 
   &__content {
-    padding-top: 20px;
-    padding-right: 24px;
-    padding-bottom: 20px;
-    padding-left: 20px;
+    padding: 20px 24px;
+
+    flex-grow: 1;
 
     border-right: 1px solid $portfolio-main-cl;
     border-bottom: 1px solid $portfolio-main-cl;
@@ -57,19 +71,5 @@
     color: $primery-text-cl;
     font-size: 16px;
     line-height: 1.88;
-  }
-
-  &__link {
-    display: block;
-    background-color: $portfolio-bg-cl;
-    text-decoration: none;
-
-    &:hover,
-    &:focus {
-      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-        0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-      transform: translateY(0);
-      transition: transform 250ms $timing-funk;
-    }
   }
 }

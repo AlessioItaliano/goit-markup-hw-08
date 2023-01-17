@@ -61,8 +61,8 @@
     transition: color 250ms $timing-funk;
 
     &--current {
-      position: relative;
       color: $accent-text-cl;
+      position: relative;
 
       &::after {
         position: absolute;
@@ -96,6 +96,24 @@
       gap: 50px;
     }
   }
+  &__mailto-icon {
+    width: 14px;
+    height: 10px;
+
+    @media (min-width: 1200px) {
+      width: 16px;
+      height: 12px;
+    }
+  }
+
+  &__smartphone-icon {
+    width: 10px;
+    height: 14px;
+
+    @media (min-width: 1200px) {
+      height: 16px;
+    }
+  }
 
   &__mail,
   &__tel {
@@ -117,6 +135,11 @@
     @media screen and (min-width: 768px) {
       padding-top: 5px;
       padding-bottom: 5px;
+    }
+
+    @media (min-width: 1200px) {
+      padding-top: 32px;
+      padding-bottom: 32px;
     }
 
     &:hover,

@@ -41,6 +41,10 @@
     &:focus {
       color: $accent-text-cl;
     }
+
+    &--current {
+      color: $accent-text-cl;
+    }
   }
 
   &__contacts {
