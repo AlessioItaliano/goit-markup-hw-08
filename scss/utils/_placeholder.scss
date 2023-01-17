@@ -8,12 +8,17 @@
 }
 
 %title {
+  margin-bottom: 30px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
-}
 
+  @media screen and (min-width: 768px) {
+    margin-bottom: 50px;
+  }
+}
 %title-cl {
   color: $secondary-text-cl;
 }

@@ -10,18 +10,35 @@
 
   &__list {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
+  }
+
+  &__item {
+    @media screen and (min-width: 768px) {
+      flex-basis: calc((100% - 30px) / 2);
+    }
+
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc((100% - 90px) / 4);
+      // display: flex;
+      // gap: 30px;
+    }
   }
 
   &__icon-conteiner {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 270px;
+    width: 100%;
     height: 120px;
     margin-bottom: 30px;
 
     background-color: $special-bg-cl;
+
+    @media screen and (min-width: 768px) {
+      // width: 270px;
+    }
   }
 
   &__accent {
@@ -33,11 +50,13 @@
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+    text-align: center;
   }
 
   &__text {
     margin-bottom: 0;
     font-size: 14px;
     line-height: 1.71;
+    margin-bottom: 30px;
   }
 }

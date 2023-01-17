@@ -43,11 +43,7 @@
 }
 
 .close-btn {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
   background-color: $primery-btn-text-cl;
-  border: 1px solid $close-btn-border-cl;
   cursor: pointer;
 
   transition: fill 250ms $timing-funk;

@@ -33,7 +33,9 @@
                   >Портфоліо</a
                 >
               </li>
-              <li><a href="#" class="header__link"> Контакти </a></li>
+              <li>
+                <a href="#" class="header__link"> Контакти </a>
+              </li>
             </ul>
           </nav>
           <ul class="header__contacts">
@@ -54,6 +56,11 @@
               </a>
             </li>
           </ul>
+          <button class="header__burger js-open-menu" type="button">
+            <svg width="40" height="40" aria-label="Мобільне меню">
+              <use href="./images/icons/icons.svg#icon-menu-burger"></use>
+            </svg>
+          </button>
         </div>
       </div>
     </header>
@@ -89,11 +96,30 @@
             <li class="sample__item">
               <a href="#" class="sample__link">
                 <div class="sample-overlay">
-                  <img
-                    src="./images/portfolio/project-1.jpg"
-                    alt="project-1"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./images/portfolio/project-desktop-1.jpg    1x,
+                        ./images/portfolio/project-desktop-1@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:786px)"
+                      srcset="
+                        ./images/portfolio/project-tab-1.jpg    1x,
+                        ./images/portfolio/project-tab-1@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      srcset="
+                        ./images/portfolio/project-mb-1.jpg    1x,
+                        ./images/portfolio/project-mb-1@2x.jpg 2x
+                      "
+                      src="./images/portfolio/project-mb-1.jpg"
+                      alt="project-1"
+                    />
+                  </picture>
                   <div class="sample-overlay__box">
                     <p class="sample-overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -112,11 +138,30 @@
             <li class="sample__item">
               <a href="#" class="sample__link">
                 <div class="sample-overlay">
-                  <img
-                    src="./images/portfolio/project-2.jpg"
-                    alt="project-2"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./images/portfolio/project-desktop-2.jpg    1x,
+                        ./images/portfolio/project-desktop-2@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:786px)"
+                      srcset="
+                        ./images/portfolio/project-tab-2.jpg    1x,
+                        ./images/portfolio/project-tab-2@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      srcset="
+                        ./images/portfolio/project-mb-2.jpg    1x,
+                        ./images/portfolio/project-mb-2@2x.jpg 2x
+                      "
+                      src="./images/portfolio/project-mb-2.jpg"
+                      alt="project-2"
+                    />
+                  </picture>
                   <div class="sample-overlay__box">
                     <p class="sample-overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -137,11 +182,30 @@
             <li class="sample__item">
               <a href="#" class="sample__link">
                 <div class="sample-overlay">
-                  <img
-                    src="./images/portfolio/project-3.jpg"
-                    alt="project-3"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./images/portfolio/project-desktop-3.jpg    1x,
+                        ./images/portfolio/project-desktop-3@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:786px)"
+                      srcset="
+                        ./images/portfolio/project-tab-3.jpg    1x,
+                        ./images/portfolio/project-tab-3@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      srcset="
+                        ./images/portfolio/project-mb-3.jpg    1x,
+                        ./images/portfolio/project-mb-3@2x.jpg 2x
+                      "
+                      src="./images/portfolio/project-mb-3.jpg"
+                      alt="project-3"
+                    />
+                  </picture>
                   <div class="sample-overlay__box">
                     <p class="sample-overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -162,11 +226,30 @@
             <li class="sample__item">
               <a href="#" class="sample__link">
                 <div class="sample-overlay">
-                  <img
-                    src="./images/portfolio/project-4.jpg"
-                    alt="project-4"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./images/portfolio/project-desktop-4.jpg    1x,
+                        ./images/portfolio/project-desktop-4@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:786px)"
+                      srcset="
+                        ./images/portfolio/project-tab-4.jpg    1x,
+                        ./images/portfolio/project-tab-4@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      srcset="
+                        ./images/portfolio/project-mb-4.jpg    1x,
+                        ./images/portfolio/project-mb-4@2x.jpg 2x
+                      "
+                      src="./images/portfolio/project-mb-4.jpg"
+                      alt="project-4"
+                    />
+                  </picture>
                   <div class="sample-overlay__box">
                     <p class="sample-overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -187,11 +270,30 @@
             <li class="sample__item">
               <a href="#" class="sample__link">
                 <div class="sample-overlay">
-                  <img
-                    src="./images/portfolio/project-5.jpg"
-                    alt="project-5"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./images/portfolio/project-desktop-5.jpg    1x,
+                        ./images/portfolio/project-desktop-5@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:786px)"
+                      srcset="
+                        ./images/portfolio/project-tab-5.jpg    1x,
+                        ./images/portfolio/project-tab-5@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      srcset="
+                        ./images/portfolio/project-mb-5.jpg    1x,
+                        ./images/portfolio/project-mb-5@2x.jpg 2x
+                      "
+                      src="./images/portfolio/project-mb-5.jpg"
+                      alt="project-5"
+                    />
+                  </picture>
                   <div class="sample-overlay__box">
                     <p class="sample-overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -212,11 +314,30 @@
             <li class="sample__item">
               <a href="#" class="sample__link">
                 <div class="sample-overlay">
-                  <img
-                    src="./images/portfolio/project-6.jpg"
-                    alt="project-6"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./images/portfolio/project-desktop-6.jpg    1x,
+                        ./images/portfolio/project-desktop-6@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:786px)"
+                      srcset="
+                        ./images/portfolio/project-tab-6.jpg    1x,
+                        ./images/portfolio/project-tab-6@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      srcset="
+                        ./images/portfolio/project-mb-6.jpg    1x,
+                        ./images/portfolio/project-mb-6@2x.jpg 2x
+                      "
+                      src="./images/portfolio/project-mb-6.jpg"
+                      alt="project-6"
+                    />
+                  </picture>
                   <div class="sample-overlay__box">
                     <p class="sample-overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -237,11 +358,30 @@
             <li class="sample__item">
               <a href="#" class="sample__link">
                 <div class="sample-overlay">
-                  <img
-                    src="./images/portfolio/project-7.jpg"
-                    alt="project-7"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./images/portfolio/project-desktop-7.jpg    1x,
+                        ./images/portfolio/project-desktop-7@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:786px)"
+                      srcset="
+                        ./images/portfolio/project-tab-7.jpg    1x,
+                        ./images/portfolio/project-tab-7@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      srcset="
+                        ./images/portfolio/project-mb-7.jpg    1x,
+                        ./images/portfolio/project-mb-7@2x.jpg 2x
+                      "
+                      src="./images/portfolio/project-mb-7.jpg"
+                      alt="project-7"
+                    />
+                  </picture>
                   <div class="sample-overlay__box">
                     <p class="sample-overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -262,11 +402,30 @@
             <li class="sample__item">
               <a href="#" class="sample__link">
                 <div class="sample-overlay">
-                  <img
-                    src="./images/portfolio/project-8.jpg"
-                    alt="project-8"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./images/portfolio/project-desktop-8.jpg    1x,
+                        ./images/portfolio/project-desktop-8@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:786px)"
+                      srcset="
+                        ./images/portfolio/project-tab-8.jpg    1x,
+                        ./images/portfolio/project-tab-8@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      srcset="
+                        ./images/portfolio/project-mb-8.jpg    1x,
+                        ./images/portfolio/project-mb-8@2x.jpg 2x
+                      "
+                      src="./images/portfolio/project-mb-8.jpg"
+                      alt="project-8"
+                    />
+                  </picture>
                   <div class="sample-overlay__box">
                     <p class="sample-overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -285,11 +444,30 @@
             <li class="sample__item">
               <a href="#" class="sample__link">
                 <div class="sample-overlay">
-                  <img
-                    src="./images/portfolio/project-9.jpg"
-                    alt="project-9"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width:1200px)"
+                      srcset="
+                        ./images/portfolio/project-desktop-9.jpg    1x,
+                        ./images/portfolio/project-desktop-9@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width:786px)"
+                      srcset="
+                        ./images/portfolio/project-tab-9.jpg    1x,
+                        ./images/portfolio/project-tab-9@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      srcset="
+                        ./images/portfolio/project-mb-9.jpg    1x,
+                        ./images/portfolio/project-mb-9@2x.jpg 2x
+                      "
+                      src="./images/portfolio/project-mb-9.jpg"
+                      alt="project-9"
+                    />
+                  </picture>
                   <div class="sample-overlay__box">
                     <p class="sample-overlay__text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -316,74 +494,73 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__container">
-          <!-- Адреса компанії -->
-          <div class="footer__address-list">
-            <a href="./index.html" class="logo footer__logo">
-              <span>Web</span
-              ><span class="footer__logo--inverse-cl">Studio</span>
-            </a>
-            <address>
-              <ul class="address">
-                <li class="address__item">
-                  <a
-                    href="https://goo.gl/maps/7CsHQQZuGeeyRnXi9"
-                    target="_blank"
-                    rel="noopener noreferrer nofollow"
-                    class="address__link address__link--light-cl"
-                  >
-                    м. Київ, пр-т Лесі Українки, 26
+          <div class="footer__tablet-box">
+            <div class="footer__address-list">
+              <a href="./index.html" class="logo footer__logo">
+                <span>Web</span
+                ><span class="footer__logo--inverse-cl">Studio</span>
+              </a>
+              <address>
+                <ul class="address">
+                  <li class="address__item">
+                    <a
+                      href="https://goo.gl/maps/7CsHQQZuGeeyRnXi9"
+                      target="_blank"
+                      rel="noopener noreferrer nofollow"
+                      class="address__link address__link--light-cl"
+                    >
+                      м. Київ, пр-т Лесі Українки, 26
+                    </a>
+                  </li>
+                  <li class="address__item">
+                    <a href="mailto:info@devstudio.com" class="address__link"
+                      >info@devstudio.com</a
+                    >
+                  </li>
+                  <li class="address__item">
+                    <a href="tel:+380961111111" class="address__link"
+                      >+38 096 111 11 11</a
+                    >
+                  </li>
+                </ul>
+              </address>
+            </div>
+
+            <div class="footer-socials">
+              <h2 class="footer-socials__title">приєднуйтесь</h2>
+              <ul class="socials footer-socials-list">
+                <li class="socials__item">
+                  <a class="socials__link footer-socials__link" href="#">
+                    <svg width="20" height="20">
+                      <use href="./images/icons/icons.svg#icon-instagram"></use>
+                    </svg>
                   </a>
                 </li>
-                <li class="address__item">
-                  <a href="mailto:info@devstudio.com" class="address__link"
-                    >info@devstudio.com</a
-                  >
+                <li class="socials__item">
+                  <a class="socials__link footer-socials__link" href="#">
+                    <svg width="20" height="20">
+                      <use href="./images/icons/icons.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
                 </li>
-                <li class="address__item">
-                  <a href="tel:+380961111111" class="address__link"
-                    >+38 096 111 11 11</a
-                  >
+                <li class="socials__item">
+                  <a class="socials__link footer-socials__link" href="#">
+                    <svg width="20" height="20">
+                      <use href="./images/icons/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a class="socials__link footer-socials__link" href="#">
+                    <svg width="20" height="20">
+                      <use href="./images/icons/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
                 </li>
               </ul>
-            </address>
+            </div>
           </div>
 
-          <!-- Соціальні мережі компанії -->
-          <div class="footer-socials">
-            <h2 class="footer-socials__title">приєднуйтесь</h2>
-            <ul class="socials footer-socials-list">
-              <li class="socials__item">
-                <a class="socials__link footer-socials__link" href="#">
-                  <svg width="20" height="20">
-                    <use href="./images/icons/icons.svg#icon-instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="socials__item">
-                <a class="socials__link footer-socials__link" href="#">
-                  <svg width="20" height="20">
-                    <use href="./images/icons/icons.svg#icon-twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="socials__item">
-                <a class="socials__link footer-socials__link" href="#">
-                  <svg width="20" height="20">
-                    <use href="./images/icons/icons.svg#icon-facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="socials__item">
-                <a class="socials__link footer-socials__link" href="#">
-                  <svg width="20" height="20">
-                    <use href="./images/icons/icons.svg#icon-linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <!-- Форма підписки -->
           <form class="subscription">
             <h3 class="subscription__title">Підпишіться на розсилку</h3>
             <div class="subscription__item">
@@ -393,7 +570,7 @@
                 placeholder="E-mail"
                 name="footer-subscription"
               />
-              <button class="btn btn-big subscription__btn" type="submit">
+              <button class="btn-big subscription__btn" type="submit">
                 Підписатися
                 <svg width="24" height="24">
                   <use href="./images/icons/icons.svg#icon-send-plane"></use>
@@ -404,5 +581,64 @@
         </div>
       </div>
     </footer>
+    <!-- Мобільне меню -->
+    <div class="mobile-menu js-menu-container">
+      <div class="container mobile-menu__container">
+        <button
+          class="close-btn mobile-menu__close-btn js-close-menu"
+          type="button"
+        >
+          <svg width="40" height="40">
+            <use href="./images/icons/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <ul class="mobile-menu__list">
+          <li class="mobile-menu__item">
+            <a href="./index.html" class="mobile-menu__link">Студія</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="./portfolio.html" class="mobile-menu__link">Портфоліо</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link"> Контакти </a>
+          </li>
+        </ul>
+        <ul class="mobile-menu__contacts">
+          <li class="mobile-menu__item">
+            <a href="tel:+380961111111" class="mobile-menu__tel">
+              +38 096 111 11 11
+            </a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="mailto:info@devstudio.com" class="mobile-menu__mail">
+              info@devstudio.com
+            </a>
+          </li>
+        </ul>
+        <ul class="mobile-menu__socials">
+          <li class="mobile-menu__socials-item">
+            <a class="mobile-menu__socials-link" href="#"
+              ><p lang="en">Instagram</p></a
+            >
+          </li>
+          <li class="mobile-menu__socials-item">
+            <a class="mobile-menu__socials-link" href="#"
+              ><p lang="en">Twitter</p></a
+            >
+          </li>
+          <li class="mobile-menu__socials-item">
+            <a class="mobile-menu__socials-link" href="#"
+              ><p lang="en">Facebook</p></a
+            >
+          </li>
+          <li class="mobile-menu__socials-item">
+            <a class="mobile-menu__socials-link" href="#"
+              ><p lang="en">LinkedIn</p></a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

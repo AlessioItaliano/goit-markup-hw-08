@@ -1,8 +1,12 @@
 .members {
-  display: flex;
+  @media (min-width: 786px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 
   &__foto {
-    flex-basis: 270px;
+    flex-basis: 450px;
   }
 
   &__description {
@@ -29,15 +33,27 @@
   }
 
   &__item {
-    margin-right: 30px;
-
+    margin-bottom: 30px;
     background-color: $primery-bg-cl;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
 
     &:last-child {
-      margin-right: 0;
+      margin-bottom: 0;
     }
+
+    @media (min-width: 786px) {
+      margin-bottom: 0;
+      flex-basis: calc((100% - 30px) / 2);
+    }
+    @media (min-width: 1200px) {
+      flex-basis: calc((100% - 90px) / 4);
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    gap: 30px;
   }
 }

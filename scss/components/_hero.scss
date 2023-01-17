@@ -1,26 +1,79 @@
 .hero {
-  max-width: 1600px;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  max-width: 480px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+
   margin-left: auto;
   margin-right: auto;
 
   background-image: linear-gradient(to top, $gradient-bg-cl, $gradient-bg-cl),
-    url(../images/main-page/hero-bg-img.jpg);
+    url(../images/main-page/hero-mobile.jpg);
   background-color: $hero-bg-cl;
+
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 
   text-align: center;
 
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(to top, $gradient-bg-cl, $gradient-bg-cl),
+      url(../images/main-page/hero-mobile@2x.jpg);
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    background-image: linear-gradient(to top, $gradient-bg-cl, $gradient-bg-cl),
+      url(../images/main-page/hero-tablet.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to top,
+          $gradient-bg-cl,
+          $gradient-bg-cl
+        ),
+        url(../images/main-page/hero-tablet@2x.jpg);
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    min-width: 1200px;
+    max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(to top, $gradient-bg-cl, $gradient-bg-cl),
+      url(../images/main-page/hero-desktop.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to top,
+          $gradient-bg-cl,
+          $gradient-bg-cl
+        ),
+        url(../images/main-page/hero-desktop@2x.jpg);
+    }
+  }
+
   &__title {
-    max-width: 696px;
+    max-width: 360px;
     margin: 0 auto 30px;
 
     color: $special-text-cl;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.61;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
+    @media screen and (min-width: 1200px) {
+      max-width: 696px;
+      font-size: 44px;
+      line-height: 1.36;
+    }
   }
 
   &__btn {
