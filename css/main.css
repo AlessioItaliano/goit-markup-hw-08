@@ -545,14 +545,25 @@ p {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.mobile-menu.is-open {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
 .mobile-menu__container {
-  padding-top: 48px;
-  padding-bottom: 48px;
-  padding-left: 40px;
-  padding-right: 0;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 48px 40px;
+  height: 100%;
+  overflow: scroll;
 }
 .mobile-menu__list {
-  margin-bottom: 306px;
+  margin-bottom: 300px;
 }
 .mobile-menu__item {
   margin-bottom: 32px;
@@ -596,10 +607,6 @@ p {
 }
 .mobile-menu__mail:hover, .mobile-menu__mail:focus {
   color: #2196f3;
-}
-.mobile-menu.is-open {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
 }
 .mobile-menu__close-btn {
   position: absolute;

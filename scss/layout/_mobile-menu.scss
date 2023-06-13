@@ -8,15 +8,22 @@
   transform: translateY(-101%);
   transition: transform 250ms $timing-funk;
 
+  &.is-open {
+    transform: translateY(0);
+  }
+
   &__container {
-    padding-top: 48px;
-    padding-bottom: 48px;
-    padding-left: 40px;
-    padding-right: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 48px 40px;
+    height: 100%;
+
+    overflow: scroll;
   }
 
   &__list {
-    margin-bottom: 306px;
+    margin-bottom: 300px;
   }
 
   &__item {
@@ -74,10 +81,6 @@
     &:focus {
       color: $accent-text-cl;
     }
-  }
-
-  &.is-open {
-    transform: translateY(0);
   }
 
   &__close-btn {
