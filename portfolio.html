@@ -73,25 +73,33 @@
           <!--Фільтр-->
           <ul class="portfolio__filter">
             <li>
-              <button type="button" class="btn-small">Усе</button>
+              <button type="button" class="btn-small" id="all">Усе</button>
             </li>
             <li>
-              <button type="button" class="btn btn-small">Веб-сайти</button>
+              <button type="button" class="btn btn-small" id="webSite">
+                Веб-сайти
+              </button>
             </li>
             <li>
-              <button type="button" class="btn btn-small">Додатки</button>
+              <button type="button" class="btn btn-small" id="app">
+                Додатки
+              </button>
             </li>
             <li>
-              <button type="button" class="btn btn-small">Дизайн</button>
+              <button type="button" class="btn btn-small" id="desine">
+                Дизайн
+              </button>
             </li>
             <li>
-              <button type="button" class="btn btn-small">Маркетинг</button>
+              <button type="button" class="btn btn-small" id="marketing">
+                Маркетинг
+              </button>
             </li>
           </ul>
 
           <!--Портфоліо робіт-->
           <ul class="sample">
-            <li class="sample__item">
+            <li class="sample__item" data-category="webSite">
               <a href="#" class="sample__link">
                 <div class="sample-overlay">
                   <picture>
@@ -133,7 +141,7 @@
                 </div>
               </a>
             </li>
-            <li class="sample__item">
+            <li class="sample__item" data-category="desine">
               <a href="#" class="sample__link">
                 <div class="sample-overlay">
                   <picture>
@@ -177,7 +185,7 @@
                 </div>
               </a>
             </li>
-            <li class="sample__item">
+            <li class="sample__item" data-category="app">
               <a href="#" class="sample__link">
                 <div class="sample-overlay">
                   <picture>
@@ -221,7 +229,7 @@
                 </div>
               </a>
             </li>
-            <li class="sample__item">
+            <li class="sample__item" data-category="marketing">
               <a href="#" class="sample__link">
                 <div class="sample-overlay">
                   <picture>
@@ -265,7 +273,7 @@
                 </div>
               </a>
             </li>
-            <li class="sample__item">
+            <li class="sample__item" data-category="app">
               <a href="#" class="sample__link">
                 <div class="sample-overlay">
                   <picture>
@@ -309,7 +317,7 @@
                 </div>
               </a>
             </li>
-            <li class="sample__item">
+            <li class="sample__item" data-category="webSite">
               <a href="#" class="sample__link">
                 <div class="sample-overlay">
                   <picture>
@@ -353,7 +361,7 @@
                 </div>
               </a>
             </li>
-            <li class="sample__item">
+            <li class="sample__item" data-category="desine">
               <a href="#" class="sample__link">
                 <div class="sample-overlay">
                   <picture>
@@ -397,7 +405,7 @@
                 </div>
               </a>
             </li>
-            <li class="sample__item">
+            <li class="sample__item" data-category="marketing">
               <a href="#" class="sample__link">
                 <div class="sample-overlay">
                   <picture>
@@ -439,7 +447,7 @@
                 </div>
               </a>
             </li>
-            <li class="sample__item">
+            <li class="sample__item" data-category="app">
               <a href="#" class="sample__link">
                 <div class="sample-overlay">
                   <picture>
@@ -636,5 +644,6 @@
       </div>
     </div>
     <script src="./js/mobile-menu.js"></script>
+    <script src="./js/portfolio-filter.js"></script>
   </body>
 </html>

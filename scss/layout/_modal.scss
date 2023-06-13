@@ -14,6 +14,8 @@
   border: 1px solid $close-btn-border-cl;
   border-radius: 4px;
 
+  overflow: scroll;
+
   @media screen and (min-width: 1200px) {
     max-width: 528px;
     max-height: 581px;

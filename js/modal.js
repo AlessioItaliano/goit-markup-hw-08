@@ -10,5 +10,10 @@
 
   function toggleModal() {
     refs.modal.classList.toggle("backdrop--is-hidden");
+    if (!refs.modal.classList.contains("backdrop--is-hidden")) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
   }
 })();
