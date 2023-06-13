@@ -1,5 +1,6 @@
 .modal {
   position: absolute;
+  overflow: scroll;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -13,8 +14,6 @@
   background-color: $primery-bg-cl;
   border: 1px solid $close-btn-border-cl;
   border-radius: 4px;
-
-  overflow: scroll;
 
   @media screen and (min-width: 1200px) {
     max-width: 528px;
